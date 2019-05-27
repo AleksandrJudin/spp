@@ -1,0 +1,32 @@
+sections.contacts#contacts
+    .container
+        .row
+            .col-12.col-lg-6.text-left
+                h2.contacts__title Наши контакты
+                ul.contacts__list.d-flex.justify-content-between.flex-wrap
+                    li.contacts__list_item
+                        span.contacts__list_item_title Юридический адрес
+                        p.contacts__list_item_text 225411, Брестская область, г. Барановичи, ул. Промышленная, 7
+                    li.contacts__list_item
+                        span.contacts__list_item_title E-mail
+                        p.contacts__list_item_text tot-centr@mail.ru
+                    li.contacts__list_item
+                        span.contacts__list_item_title Телефон
+                        p.contacts__list_item_text
+                            a(href="tel:375447900006") +375 (44) 790 00 06, <br>
+                            a(href="tel:8016364-08-48") 8 (0163) 64-08-48
+                    li.contacts__list_item
+                        span.contacts__list_item_title Факс
+                        p.contacts__list_item_text
+                            a(href="tel:8016364-08-48") 8 (0163) 64-08-48
+            .col-12.col-lg.text-ceter.text-lg-right.ml-xl-auto.zi-0 
+                .row.form
+                    .col-12.col-lg-10.m-auto.text-center.text-xl-left
+                        form.header__form.contacts__form
+                            h3.header__form_title Обратная связь
+                            p.header__form_text Свяжитесь с нами по телефону <br>
+                                a.header__form_text_tel(href="tel:375447900006") +375 (44) 790 00 06
+                                | или оставьте заявку, чтобы мы перезвонили Вам в течение 30 минут.
+                            input.name(type="text" placeholder="Ваше имя")
+                            input.tel(type="tel" placeholder="Ваш телефон")
+                            button.header__form_btn.btn(type="submit") Позвонить              

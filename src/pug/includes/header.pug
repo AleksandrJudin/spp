@@ -1,0 +1,60 @@
+header.header#header
+    .container
+        .row.align-items-center.justify-content-between.mt-2.top-header
+            .col-6.col-lg-auto.col-md-6.text-md-left.text-xl-left
+                a.header__logo(href="index.html")
+                    img.header__logo_img(src="img/logo.png" alt="logo")
+            .col-lg-6.d-none.d-lg-block
+                nav.nav__menu
+                    ul.header__menu
+                        li.header__menu_item
+                            a(href="#").header__menu_item_link Главная
+                        li.header__menu_item
+                            a(href="#").header__menu_item_link О нас
+                        li.header__menu_item
+                            a(href="#").header__menu_item_link Услуги
+                        li.header__menu_item
+                            a(href="#").header__menu_item_link Отзывы
+                        li.header__menu_item
+                            a(href="#").header__menu_item_link Новости
+                        li.header__menu_item
+                            a(href="#").header__menu_item_link Контакты
+            .col-12.col-lg-2.d-none.d-lg-block.text-center.text-lg-right
+                a.header__tel(href="tel:375447900006") +375 (44) 790 00 06
+            .col-12.text-center.d-lg-none.mobile__menu
+                .nav-trigger#nav-trigger
+                    span.line
+                    span.line
+                    span.line
+                nav(id="nav" class="out")
+                    ul.nav__list
+                        li
+                            a(href="#").nav-label Главная
+                        li
+                            a(href="#").nav-label О нас
+                        li
+                            a(href="#").nav-label Услуги
+                        li
+                            a(href="#").nav-label Отзывы
+                        li
+                            a(href="#").nav-label Контакты
+        .row.position-relative.main
+            .col-12.col-lg-7.text-center.text-lg-left.z999
+                #parallax.parallax
+                    h1.header__title.plx Повысить квалификацию работников <br> <span>- ЛЕГКО!</span>
+                p.header__subtitle Возьмем на себя все вопросы <br> по обучению сотрудников
+            .col-auto.position-absolute.d-none.d-lg-block.zi0
+                img.header__man(src="img/header-man.png")
+            .col-12.col-lg.text-ceter.text-lg-right.ml-xl-auto.zi-0 
+                .row.form
+                    .col-12.text-center.text-xl-left
+                        form.header__form
+                            h3.header__form_title Выберите нас
+                            p.header__form_text Свяжитесь с нами по телефону <br>
+                                a.header__form_text_tel(href="tel:375447900006") +375 (44) 790 00 06
+                                | или оставьте заявку, чтобы мы перезвонили Вам в течение 30 минут.
+                            input.name(type="text" placeholder="Ваше имя")
+                            input.tel(type="tel" placeholder="Ваш телефон")
+                            button.header__form_btn.btn(type="submit") Позвонить
+                     
+
