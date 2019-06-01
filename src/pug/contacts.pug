@@ -1,0 +1,48 @@
+doctype html
+html(lang="ru")
+    include includes/head.pug
+        title Контакты
+    body
+        include includes/header-page.pug
+        section.services
+            .container 
+                .row 
+                    .col-auto.text-center.text-lg-left
+                        ul.bread-crumbs
+                            li
+                                a(href="index.html") Главная
+                            li
+                                span Контакты
+                .row
+                    .col-12.text-center.text-lg-left
+                        h3.title-page Контакты
+                .row.contactsItem
+                    .col-12.col-lg-3.text-center.mt-5
+                        i(class="fas fa-map-marker-alt")
+                        span.contactsItem__title Адрес:
+                        p.contactsItem__info 225411, Республика Беларусь, Брестская область, г.Барановичи, ул. Промышленная, д. 7
+                    .col-12.col-lg-3.text-center.mt-5
+                        i(class="far fa-envelope")
+                        span.contactsItem__title Email и реквизиты:
+                        p.contactsItem__info tot-centr@mail.ru
+                        p.contactsItem__info ОАО «Банк БелВЭБ» <br> BIC: BELBBY2X Номер счета (IBAN): BY40BELB30120046540030226000 УНП 291369455
+                    .col-12.col-lg-3.text-center.mt-5
+                        i(class="far fa-clock") 
+                        span.contactsItem__title Режим работы:
+                        p.contactsItem__info Понедельник-пятница <br> с 08.30 до 17.00 часов.
+                    .col-12.col-lg-3.text-center.mt-5
+                        i(class="fas fa-phone-volume")
+                        span.contactsItem__title Тел/факс:
+                        span.contactsItem__person Директор
+                        p.contactsItem__info Буршко Александр Александрович <br> Тел.(0163)64-08-48, (029)6943914
+                        span.contactsItem__person Заместитель директора
+                        p.contactsItem__info Романюк Андрей Васильевич <br> Тел.(0163)64-08-48, (029)7911942
+                        span.contactsItem__person Учебно-методический отдел
+                        p.contactsItem__info Тел/факс (0163)64-08-48, <br> Velcom +375 44 790-00-06
+                        span.contactsItem__person Бухгалтерия 
+                        p.contactsItem__info Тел/факс (0163)64-08-48
+
+        include includes/map.pug
+        include includes/contacts.pug
+        include includes/footer.pug
+        include includes/scripts.pug

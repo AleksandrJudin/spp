@@ -1,0 +1,113 @@
+doctype html
+html(lang="ru")
+    include includes/head.pug
+        title Новости
+    body
+        include includes/header-page.pug
+        section.news
+            .container 
+                .row 
+                    .col-auto.text-center.text-lg-left
+                        ul.bread-crumbs
+                            li
+                                a(href="index.html") Главная
+                            li
+                                span Новости
+                .row
+                    .col-12.text-center.text-lg-left
+                        h3.title-page Новости
+                .row.mt-5.blog.align-items-center.d-none.d-lg-flex
+                    .col-12.col-lg-6
+                        img.img-fluid(src="img/news/news-1.jpg")
+                    .col-12.col-lg-6.blog__item
+                        span.blog__item_postDate 
+                            i(class="far fa-clock")
+                            | Опубликованно Дек 08, 2017
+                        h4.blog__item_title Продолжается набор слушателей
+                        p.blog__item_text В ЯНВАРЕ-ФЕВРАЛЕ текущего года продолжается набор слушателей по следующим образовательным программам:   № п/п Наименование образовательной программы Кол-во часов обучения 1. Образовательная программа переподготовки
+                        a.blog__item_btn(href="#") Читать полностью
+                .row.mt-5.blog.align-items-center.d-none.d-lg-flex
+                    .col-12.col-lg-6.blog__item.text-lg-right
+                        span.blog__item_postDate 
+                            i(class="far fa-clock")
+                            | Опубликованно Дек 07, 2017
+                        h4.blog__item_title Дополнительное образование взрослых
+                        p.blog__item_text Дополнительное образование взрослых. Герасименок А. Происходящие интенсивные преобразования в экономике и общественном развитии страны, появление новых сложнейших технологий требуют постоянного совершенствования квалификации кадров.
+                        a.blog__item_btn.ml-auto(href="#") Читать полностью
+                    .col-12.col-lg-6
+                        img.img-fluid(src="img/news/news-2.jpg")
+                .row.mt-5.blog.align-items-center.d-none.d-lg-flex
+                    .col-12.col-lg-6
+                        img.img-fluid(src="img/news/news-3.jpg")
+                    .col-12.col-lg-6.blog__item
+                        span.blog__item_postDate 
+                            i(class="far fa-clock")
+                            | Опубликованно Дек 06, 2017
+                        h4.blog__item_title Порядок и особенности присвоения квалификационных разрядов
+                        p.blog__item_text Порядок и особенности присвоения квалификационных разрядов рабочим и квалификационных категорий специалистам. Новикова И. При присвоении квалификационных разрядов рабочим и квалификационных категорий специалистам всегда возникает ...
+                        a.blog__item_btn(href="#") Читать полностью
+                .row.mt-5.blog.align-items-center.d-none.d-lg-flex
+                    .col-12.col-lg-6.blog__item.text-lg-right
+                        span.blog__item_postDate 
+                            i(class="far fa-clock")
+                            | Опубликованно Дек 05, 2017
+                        h4.blog__item_title Обучение работника по профессии «водитель погрузчика»
+                        p.blog__item_text Обучение работника по профессии «водитель погрузчика». Новикова И. Можно ли работника, имеющего водительское удостоверение на право управления погрузчиками категории F и 6-й разряд тракториста, ...
+                        a.blog__item_btn.ml-auto(href="#") Читать полностью
+                    .col-12.col-lg-6
+                        img.img-fluid(src="img/news/news-4.jpg")
+
+
+
+
+                .row.mt-5.blog.align-items-center.d-lg-none
+                    .col-12.col-lg-6
+                        img.img-fluid(src="img/news/news-1.jpg")
+                    .col-12.col-lg-6.blog__item
+                        span.blog__item_postDate 
+                            i(class="far fa-clock")
+                            | Опубликованно Дек 08, 2017
+                        h4.blog__item_title Продолжается набор слушателей
+                        p.blog__item_text В ЯНВАРЕ-ФЕВРАЛЕ текущего года продолжается набор слушателей по следующим образовательным программам:   № п/п Наименование образовательной программы Кол-во часов обучения 1. Образовательная программа переподготовки
+                        a.blog__item_btn(href="#") Читать полностью
+                .row.mt-5.blog.align-items-center.d-lg-none
+                    .col-12.col-lg-6
+                        img.img-fluid(src="img/news/news-2.jpg")
+                    .col-12.col-lg-6.blog__item.text-lg-right
+                        span.blog__item_postDate 
+                            i(class="far fa-clock")
+                            | Опубликованно Дек 07, 2017
+                        h4.blog__item_title Дополнительное образование взрослых
+                        p.blog__item_text Дополнительное образование взрослых. Герасименок А. Происходящие интенсивные преобразования в экономике и общественном развитии страны, появление новых сложнейших технологий требуют постоянного совершенствования квалификации кадров.
+                        a.blog__item_btn(href="#") Читать полностью
+                .row.mt-5.blog.align-items-center.d-lg-none
+                    .col-12.col-lg-6
+                        img.img-fluid(src="img/news/news-3.jpg")
+                    .col-12.col-lg-6.blog__item
+                        span.blog__item_postDate 
+                            i(class="far fa-clock")
+                            | Опубликованно Дек 06, 2017
+                        h4.blog__item_title Порядок и особенности присвоения квалификационных разрядов
+                        p.blog__item_text Порядок и особенности присвоения квалификационных разрядов рабочим и квалификационных категорий специалистам. Новикова И. При присвоении квалификационных разрядов рабочим и квалификационных категорий специалистам всегда возникает ...
+                        a.blog__item_btn(href="#") Читать полностью
+                .row.mt-5.blog.align-items-center.d-lg-none
+                    .col-12.col-lg-6
+                        img.img-fluid(src="img/news/news-4.jpg")
+                    .col-12.col-lg-6.blog__item.text-lg-right
+                        span.blog__item_postDate 
+                            i(class="far fa-clock")
+                            | Опубликованно Дек 05, 2017
+                        h4.blog__item_title Обучение работника по профессии «водитель погрузчика»
+                        p.blog__item_text Обучение работника по профессии «водитель погрузчика». Новикова И. Можно ли работника, имеющего водительское удостоверение на право управления погрузчиками категории F и 6-й разряд тракториста, ...
+                        a.blog__item_btn(href="#") Читать полностью
+                    
+                    
+                            
+
+
+                    
+
+        include includes/map.pug
+        include includes/contacts.pug
+        include includes/footer.pug
+        include includes/scripts.pug

@@ -239,6 +239,7 @@ section {
           transform: translateY(-100%);
   transition: ease 0.5s;
   padding: 5px 50px;
+  left: 15px;
 }
 
 .headhesive--stick {
@@ -247,6 +248,7 @@ section {
 }
 
 .nav-trigger {
+  background: #18152a;
   position: fixed;
   width: 110px;
   height: 98px;
@@ -315,7 +317,7 @@ section {
 
 .mobile__menu nav {
   width: 100%;
-  height: 110%;
+  height: 91%;
   position: fixed;
   z-index: 100;
   left: 0;
@@ -543,9 +545,44 @@ h2::before {
 }
 
 .header__menu {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+}
+
+.header__menu_item .subMenu {
+  transition: ease 0.6s;
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  background-color: #151226;
+  padding: 30px;
+}
+
+.header__menu_item .subMenu li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Gilroy-Bold';
+  margin: 10px 0;
+  display: block;
+}
+
+.header__menu_item .subMenu li a:hover {
+  transition: ease 0.6s;
+  color: #fbe604;
+  text-decoration: none;
+}
+
+.header__menu_item:hover ul {
+  transition: ease 0.6s;
+  display: block;
+}
+
+.header__menu_item:hover li {
+  transition: ease 0.6s;
+  display: block;
 }
 
 .header__menu_item_link {
@@ -1072,6 +1109,164 @@ h2::before {
   margin-top: 15px;
 }
 
+.header-page {
+  padding-bottom: 20px;
+}
+
+.bread-crumbs {
+  margin: 40px 0;
+  display: flex;
+}
+
+.bread-crumbs li:not(:first-child) {
+  padding-left: 40px;
+}
+
+.bread-crumbs li a {
+  color: #a8a8a8;
+  position: relative;
+}
+
+.bread-crumbs li a:after {
+  content: '|';
+  position: absolute;
+  right: -23px;
+  top: -4px;
+}
+
+.bread-crumbs li span {
+  color: #151226;
+}
+
+.title-page {
+  font-size: 36px;
+  font-family: 'Gilroy-Bold';
+  color: #151226;
+  margin-bottom: 20px;
+}
+
+.aboutUs {
+  padding-bottom: 80px;
+}
+
+.aboutUs p {
+  color: #151226;
+  margin: 15px 0;
+}
+
+.services {
+  padding-bottom: 80px;
+}
+
+.services__list_item_link:hover {
+  text-decoration: none;
+}
+
+.services__list_item_link:hover p {
+  color: #fbe604;
+  transition: ease 0.6s;
+}
+
+.services__list_item_link img {
+  position: relative;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+}
+
+.services__list_item_link img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.services__list_item_link p {
+  margin: 20px 0;
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+  color: #000;
+}
+
+.rewievs__text {
+  color: #151226;
+  font-family: 'Gilroy-Bold';
+}
+
+.news {
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+}
+
+.news .blog {
+  background-color: #fff;
+}
+
+.news .blog__item {
+  padding: 0 50px;
+}
+
+.news .blog__item_postDate {
+  color: #c5c5c5;
+  font-size: 15px;
+  font-family: 'Gilroy-Bold';
+}
+
+.news .blog__item_postDate i {
+  padding-right: 10px;
+}
+
+.news .blog__item_title {
+  color: #000;
+  font-family: 'Gilroy-Bold';
+  margin: 20px 0;
+}
+
+.news .blog__item_text {
+  color: #929292;
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.news .blog__item_btn {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px 30px;
+  border: 1px solid #929292;
+  color: #929292;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.news .blog__item_btn:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.6s;
+}
+
+.contactsItem {
+  color: #000;
+}
+
+.contactsItem i {
+  font-size: 45px;
+}
+
+.contactsItem__title {
+  display: block;
+  font-family: 'Gilroy-Bold';
+  margin: 25px 0 15px 0;
+}
+
+.contactsItem__info {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.contactsItem__person {
+  font-family: 'Gilroy-Bold';
+  font-size: 17px;
+}
+
 @media only screen and (max-width: 1756px) {
   .direction__info::before {
     display: none;
@@ -1253,6 +1448,15 @@ h2::before {
   .headhesive {
     display: none;
   }
+  .header .header__menu .header__menu_item:hover ul {
+    display: none;
+  }
+  .fancybox-toolbar {
+    right: 200px;
+  }
+  .news .blog__item {
+    padding: 10px 20px;
+  }
 }
 
 /**/
@@ -1297,6 +1501,14 @@ h2::before {
   }
   iframe {
     height: 300px;
+  }
+  .news .blog__item_title {
+    font-size: 27px;
+  }
+  .news .blog__item_btn {
+    padding: 10px 30px;
+    font-size: 15px;
+    width: 220px;
   }
 }
 

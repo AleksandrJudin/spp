@@ -1,0 +1,50 @@
+doctype html
+html(lang="ru")
+    include includes/head.pug
+        title О нас
+    body
+        include includes/header-page.pug
+        section.aboutUs
+            .container 
+                .row 
+                    .col-auto.text-center.text-lg-left
+                        ul.bread-crumbs
+                            li
+                                a(href="index.html") Главная
+                            li
+                                span О нас
+                .row
+                    .col-12.text-center.text-lg-left
+                        h3.aboutUs__title.title-page О нас
+                .row
+                    .col-12.text-center.text-lg-left
+                        p Сегодня Учебный центр СТАНДАРТ ПРОФПОДГОТОВКИ ООО — это обучающая организация дополнительного образования взрослых, основной сферой деятельности которой является подготовка, повышение квалификации и переподготовка рабочих (служащих).
+                    .col-12.text-center.text-lg-left
+                        p Работая с 2015 года, мы приобрели опыт прямых связей с заказчиками, улучшили содержание обучения и укрепили учебно-материальную базу, что позволяет решать задачи по обеспечению отраслей экономики профессиональными кадрами требуемого уровня квалификации и удовлетворения потребностей граждан в профессиональном совершенствовании.
+                    .col-12.text-center.text-lg-left
+                        p Для решения этих задач Учебным центром реализуется более 150 учебных программ, а по результатам обучения выдаются документы установленного государственного образца.
+                    .col-12.text-center.text-lg-left
+                        p С целью оптимизации затрат заказчика, наши специалисты организуют обучение по месту нахождения предприятий, без отрыва слушателей от профессиональной деятельности. Нам доверяют более 400 предприятий на территории Брестской, Гродненской и Минской областей и с каждым днем мы расширяем географию и содержание своей деятельности.
+                .row.mt-3
+                    .col-12.col-lg-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery" href="img/about/sert1.jpg")
+                            img.img-fluid(src="img/about/sert1.jpg")
+                    .col-12.col-lg-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery" href="img/about/sert2.jpg")
+                            img.img-fluid(src="img/about/sert2.jpg")
+                    .col-12.col-lg-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery" href="img/about/sert3.jpg")
+                            img.img-fluid(src="img/about/sert3.jpg")
+                    .col-12.col-lg-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery" href="img/about/sert4.jpg")
+                            img.img-fluid(src="img/about/sert4.jpg")
+                    .col-12.col-lg-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery" href="img/about/sert5.jpg")
+                            img.img-fluid(src="img/about/sert5.jpg")
+                    .col-12.col-lg-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery" href="img/about/sert6.jpg")
+                            img.img-fluid(src="img/about/sert6.jpg")
+        include includes/map.pug
+        include includes/contacts.pug
+        include includes/footer.pug
+        include includes/scripts.pug

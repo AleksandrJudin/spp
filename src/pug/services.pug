@@ -1,0 +1,48 @@
+doctype html
+html(lang="ru")
+    include includes/head.pug
+        title Услуги
+    body
+        include includes/header-page.pug
+        section.services
+            .container 
+                .row 
+                    .col-auto.text-center.text-lg-left
+                        ul.bread-crumbs
+                            li
+                                a(href="index.html") Главная
+                            li
+                                span Услуги
+                .row
+                    .col-12.text-center.text-lg-left
+                        h3.title-page Услуги
+                .row.services__list.mt-5
+                    .col-12.col-lg-4.text-center.services__list_item.mt-3
+                        a(href="#").services__list_item_link
+                            img.services__img.img-fluid(src="img/services/serv-3.jpg")
+                            p.services__list_item_text Подготовка и повышение квалификации рабочих (служащих)
+                    .col-12.col-lg-4.text-center.services__list_item.mt-3
+                        a(href="#").services__list_item_link
+                            img.services__img.img-fluid(src="img/services/serv-2.jpg")
+                            p.services__list_item_text Курсы целевого назначения
+                    .col-12.col-lg-4.text-center.services__list_item.mt-3
+                        a(href="#").services__list_item_link
+                            img.services__img.img-fluid(src="img/services/serv-1.jpg")
+                            p.services__list_item_text Перевозка опасных грузов (ADR)
+                    .col-12.col-lg-4.text-center.services__list_item.mt-3
+                        a(href="#").services__list_item_link
+                            img.services__img.img-fluid(src="img/services/serv-4.jpg")
+                            p.services__list_item_text Пожарно-технический минимун
+                    .col-12.col-lg-4.text-center.services__list_item.mt-3
+                        a(href="#").services__list_item_link
+                            img.services__img.img-fluid(src="img/services/serv-6.jpg")
+                            p.services__list_item_text Охрана труда
+                    .col-12.col-lg-4.text-center.services__list_item.mt-3
+                        a(href="#").services__list_item_link
+                            img.services__img.img-fluid(src="img/services/serv-5.jpg")
+                            p.services__list_item_text Обучение по программе "Проверка, прочистка дымовых и вентиляционных каналов"
+
+        include includes/map.pug
+        include includes/contacts.pug
+        include includes/footer.pug
+        include includes/scripts.pug

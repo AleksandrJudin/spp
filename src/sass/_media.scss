@@ -190,6 +190,15 @@
 	.headhesive {
 		display: none;
 	}
+	.header .header__menu .header__menu_item:hover ul {
+		display: none;
+	}
+	.fancybox-toolbar  {
+		right: 200px;
+	}
+	.news .blog__item {
+		padding: 10px 20px;
+	}
 }
 	/**/
 
@@ -234,6 +243,14 @@
 	}
 	iframe {
 		height: 300px;
+	}
+	.news .blog__item_title {
+		font-size: 27px;
+	}
+	.news .blog__item_btn {
+		padding: 10px 30px;
+		font-size: 15px;
+		width: 220px;
 	}
 	
 }

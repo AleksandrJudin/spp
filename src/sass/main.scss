@@ -97,11 +97,11 @@ section {
   position: fixed;
   width: 100%;
   top: -10px;
-  
   z-index: 999;
   transform: translateY(-100%);
   transition: ease 0.5s;
   padding: 5px 50px;
+  left: 15px;
 }
 
 .headhesive--stick{
@@ -110,6 +110,7 @@ section {
 // Мобильное меню 
 
 .nav-trigger {
+  background: #18152a;
   position: fixed;
   width: 110px;
   height: 98px;
@@ -193,7 +194,7 @@ section {
   z-index: 9999999;
   nav {
     width: 100%;
-    height: 110%;
+    height: 91%;
     position: fixed;
     z-index: 100;
     left: 0;
@@ -412,10 +413,42 @@ h2 {
   background-size: cover;
   padding-bottom: 70px;
   &__menu {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
     &_item {
+      .subMenu {
+        transition: ease 0.6s;
+        z-index: 9999;
+        display: none;
+        position: absolute;
+        background-color: $title;
+        padding: 30px;
+        li {
+          a {
+            text-decoration: none;
+            color: $white;
+            font-family: 'Gilroy-Bold';
+            margin: 10px 0;
+            display: block;
+            &:hover {
+              transition: ease 0.6s;
+              color: $yellow;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      &:hover ul{
+        transition: ease 0.6s;
+        display: block;
+      }
+      &:hover li{
+        transition: ease 0.6s;
+        display: block;
+      }
       &_link {
         text-transform: uppercase;
         @include font(20px, 700, $white);
@@ -426,6 +459,7 @@ h2 {
         }
       }
     }
+    
   }
   &__tel {
     @include font(20px, 700, $yellow);
@@ -893,6 +927,159 @@ h2 {
   &__right {
     font-size: 12px;
     margin-top: 15px;
+  }
+}
+
+
+
+
+
+.header-page {
+  padding-bottom: 20px;
+}
+
+.bread-crumbs {
+  margin: 40px 0;
+  display: flex;
+  li {
+    &:not(:first-child) {
+      padding-left: 40px;
+    }
+    a {
+      color: #a8a8a8;
+      position: relative;
+      &:after {
+        content: '|';
+        position: absolute;
+        right: -23px;
+        top: -4px;
+      }
+    }
+    span {
+      color: $title;
+    }
+  }
+}
+
+.title-page {
+  font-size: 36px;
+  font-family: 'Gilroy-Bold';
+  color: $title;
+  margin-bottom: 20px;
+}
+
+// ABOUT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.aboutUs {
+  padding-bottom: 80px;
+  p {
+    color: $title;
+    margin: 15px 0;
+  }
+}
+
+.services {
+  padding-bottom: 80px;
+  &__list {
+    &_item {
+      &_link {
+        
+        &:hover {
+          text-decoration: none;
+        }
+        &:hover p{
+          color: $yellow;
+          transition: ease 0.6s;
+        }
+        img {
+          position: relative;
+          -moz-transition: all 1s ease-out;
+          -o-transition: all 1s ease-out;
+          -webkit-transition: all 1s ease-out;
+          &:hover {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+          }
+        }
+        p {
+          margin: 20px 0;
+          font-family: 'Gilroy-Bold';
+          font-size: 18px;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.rewievs {
+  &__text {
+    color: $title;
+    font-family: 'Gilroy-Bold';
+  }
+}
+
+.news {
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  .blog {
+    background-color: #fff;
+    &__item {
+      padding: 0 50px;
+      &_postDate {
+        color: #c5c5c5;
+        font-size: 15px;
+        font-family: 'Gilroy-Bold';
+        i {
+          padding-right: 10px;
+        }
+      }
+      &_title {
+        color: #000;
+        font-family: 'Gilroy-Bold';
+        margin: 20px 0;
+      }
+      &_text {
+        color: #929292;
+        font-size: 18px;
+        padding-bottom: 40px;
+      }
+      &_btn {
+        text-align: center;
+        margin: 20px 0;
+        padding: 20px 30px;
+        border: 1px solid #929292;
+        color: #929292;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+          background-color: #000;
+          color: #fff;
+          transition: 0.6s;
+        }
+      }
+    }
+  }
+}
+
+.contactsItem {
+  color: #000;
+  i {
+    font-size: 45px;
+  }
+  &__title {
+    display: block;
+    font-family: 'Gilroy-Bold';
+    margin: 25px 0 15px 0;
+  }
+  &__info {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  &__person {
+    font-family: 'Gilroy-Bold';
+    font-size: 17px;
   }
 }
 
